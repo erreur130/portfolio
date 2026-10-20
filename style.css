@@ -1,0 +1,127 @@
+/* Décalage pour que les ancres ne passent pas sous la navbar fixe */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 76px; /* environ la hauteur de la navbar */
+    background-color: #b7edff;
+}
+
+/* Photo de profil (section "Qui suis-je") */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+section[id], .card[id] {
+    scroll-margin-top: 90px;
+}
+
+/* Mise en avant du lien actif dans la navbar (scrollspy Bootstrap) */
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: var(--bs-primary) !important;
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+/* Timeline "Mon parcours" */
+
+.timeline {
+    position: relative;
+    margin-left: 0.5rem;
+    padding-left: 1.75rem;
+    border-left: 3px solid #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1.75rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.35rem;
+    top: 0.2rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--dot-color, #6c757d);
+}
+
+.timeline-item.is-done { --dot-color: #198754; }
+
+.timeline-item.is-diploma { --dot-color: #ffc107; }
+
+.timeline-date {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Cartes projets (aperçu index)  */
+.project-preview-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.project-preview-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important;
+}
+
+/* Médias projets (page projets.html) */
+.project-media {
+    max-height: 420px;
+    width: 100%;
+    object-fit: contain;
+    background-color: #f8f9fa; /* comble les bandes vides si le ratio ne correspond pas */
+}
+
+/*rajout visiblilité carousel*/
+.carousel-control-prev, .carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 1.2rem;
+    background-size: 50%;
+}
+
+/* Barres de compétences */
+.skill-bar {
+    margin-bottom: 0.9rem;
+}
+
+.skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.skill-bar-track {
+    height: 1.1rem;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.skill-bar-fill.level-success  { background-color: var(--bs-success); }
+.skill-bar-fill.level-primary  { background-color: var(--bs-primary); }
+.skill-bar-fill.level-secondary{ background-color: var(--bs-secondary); }
+.skill-bar-fill.level-dark     { background-color: var(--bs-dark); }
+.skill-bar-fill.level-info     { background-color: var(--bs-info); }

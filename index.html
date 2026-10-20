@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+
+        <title> Portfolio ​d'un futur dev </title>
+
+        <meta name="auteur" content="DOSSETTO Loïc"/>
+        <meta name="description" content="c'est une mise en page avec des framework Bootstrap "/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Loïc DOSSETTO - Portfolio d'un futur dev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#qui-suis-je">Qui suis-je ?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#parcours">Parcours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#competences">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#experiences">Expériences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#centres_interet">Centres d'intérêt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#projets">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <!-- Titre -->
+            <div class="text-center mt-4 mb-2">
+                <h1 class="fw-bold">Portfolio d'un futur dev</h1>
+            </div>
+
+            <!-- Qui suis-je -->
+            <div id="qui-suis-je" class="card mt-4 shadow-sm card-body">
+                <h2 class="card-title border-bottom pb-2">Qui suis-je ?</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <img src="./images_et_video/autres/photo_Loic.jpg" class="img-fluid rounded-circle shadow profile-photo" alt="Photo de Loïc">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="lead">Je m'appelle <strong>DOSSETTO Loïc</strong>,
+                            j'ai 19 ans et je suis en deuxième année de BUT informatique,
+                            je nourris depuis le collège, une passion pour la programmation.
+                            J'ai pour projet professionnel de me spécialiser dans une des branches
+                            de l'informatique qui utilise des langages comme le C++,
+                            par exemple la branche du jeu vidéo.</p>
+                            <a class="link-offset-2 link-underline link-underline-opacity-10" href="./images_et_video/autres/CV_DOSSETTO_Loïc.pdf">Voir mon CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mon parcours -->
+            <div id="parcours" class="card mt-4 shadow-sm card-body">
+                <h2 class="card-title border-bottom pb-2">Mon parcours</h2>
+                <div class="timeline mt-3">
+                    <div class="timeline-item is-done">
+                        <div class="timeline-date">2025 - 2028</div>
+                        <span class="badge bg-success me-1 mb-1">BUT Informatique</span>
+                        <!-- <span class="badge bg-success me-1 mb-1">Major de promo 2025-2026</span> -->
+                    </div>
+                    <div class="timeline-item is-diploma">
+                        <div class="timeline-date">2025</div>
+                        <span class="badge text-dark bg-warning me-1 mb-1">BAC Général</span>
+                        <span class="badge text-dark bg-warning me-1 mb-1">Permis B</span>
+                    </div>
+                    <div class="timeline-item is-done">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <span class="badge bg-success me-1 mb-1">Lycée Général</span>
+                    </div>
+                    <div class="timeline-item is-diploma">
+                        <div class="timeline-date">2022</div>
+                        <span class="badge text-dark bg-warning me-1 mb-1">BIA (brevet d'initiation aéronautique)</span>
+                    </div>
+                </div>
+                <small class="text-muted d-block mt-2">
+                    <span class="badge bg-success">&nbsp;</span> formations/scolarité -
+                    <span class="badge bg-warning">&nbsp;</span> diplômes/certifications
+                </small>
+            </div>
+
+
+            <!-- Compétences -->
+
+            <div id="competences" class="card mt-4 shadow-sm card-body">
+                <h2 class="card-title border-bottom pb-2">Savoir-faire (hardskills)</h2>
+                <div class="row mt-3">
+
+                    
+                    <div class="col-md-6">
+
+                        <!-- Langages étudiés -->
+
+                        <h5 class="text-muted text-uppercase mb-3">Langages étudiés</h5>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>HTML</span></div>
+                            <abbr title="HTML 73%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-success" style="width: 73%;"></div></div>
+                            </abbr>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Python</span></div>
+                            <abbr title="Python 65%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-success" style="width: 65%;"></div></div>
+                            </abbr>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>CSS</span></div>
+                            <abbr title="CSS 45%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-success" style="width: 45%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Bash</span></div>
+                            <abbr title="Bash 30%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-success" style="width: 30%;"></div></div>
+                            </abbr>
+                        </div>
+
+                        <!-- Langues -->
+
+                        <h5 class="text-muted text-uppercase mb-3 mt-4">Langues</h5>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Français</span></div>
+                            <abbr title="Français 90%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-secondary" style="width: 90%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Anglais</span></div>
+                            <abbr title="Anglais 50%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-secondary" style="width: 50%;"></div></div>
+                            </abbr>
+                        </div>
+
+                        <!-- IDE -->
+
+                        <h5 class="text-muted text-uppercase mb-3 mt-4">IDE</h5>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>VSCode</span></div>
+                            <abbr title="VSCode 75%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-info" style="width: 75%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>QT Creator</span></div>
+                            <abbr title="QT Creator 70%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-info" style="width: 70%;"></div></div>
+                            </abbr>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-6">
+
+                        <!-- Langages en apprentissage -->
+
+                        <h5 class="text-muted text-uppercase mb-3">Langages en apprentissage</h5>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>C++</span></div>
+                            <abbr title="C++ 80%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-primary" style="width: 80%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>SQL</span></div>
+                            <abbr title="SQL 75%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-primary" style="width: 75%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Sagemath</span></div>
+                            <abbr title="Sagemath 72%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-primary" style="width: 72%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Java</span></div>
+                            <abbr title="Java 50%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-primary" style="width: 50%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>JavaScript</span></div>
+                            <abbr title="JavaScript 20%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-primary" style="width: 20%;"></div></div>
+                            </abbr>
+                        </div>
+
+                        <!-- Systèmes d'exploitation -->
+
+                        <h5 class="text-muted text-uppercase mb-3 mt-4">Systèmes d'exploitation</h5>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Windows</span></div>
+                            <abbr title="Windows 90%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-dark" style="width: 90%;"></div></div>
+                            </abbr>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-label"><span>Linux</span></div>
+                            <abbr title="Linux 75%">
+                                <div class="skill-bar-track"><div class="skill-bar-fill level-dark" style="width: 75%;"></div></div>
+                            </abbr>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Savoir-être -->
+
+                <h2 class="card-title border-bottom pb-2 mt-4">Savoir-être (softskills)</h2>
+                <div class="row mt-3">
+                    <div>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Curieux</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Empathique</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">A l'écoute</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Patient</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Persévérant</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Créatif</span>
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Aimable</span> 
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Impliqué</span> 
+                        <span class="badge text-bg-info me-1 mb-1 fs-6">Rigoureux</span> 
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- exp professionnelles -->
+            <div id="experiences" class="card mt-4 shadow-sm card-body">
+                <div class="card-body">
+                    <h2 class="card-title border-bottom pb-2">Expériences professionnelles</h2>
+                    <ul class="list-group list-group-flush mt-2">
+                        <li class="list-group-item">
+                            <strong>Magasinier à GIFI</strong> - Été 2024 (3 semaines) 
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Stage de 2nde au centre de formation GAME ACADEMY</strong> à Avignon (développeur/graphiste dans le jeu vidéo) en 2023 
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Stage de 3ème à Mondragon Assembly</strong> à Orange (spécialisé dans le développement de solutions d'automatisation et d'assemblage) en 2022 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="centres_interet" class="card mt-4 shadow-sm card-body">
+
+                <!-- Passions -->
+
+                <h2 class="card-title border-bottom pb-2">Passions</h2>
+                <div class="d-flex gap-3 mt-2 flex-wrap">
+                    <div class="text-center p-3 bg-light rounded shadow-sm">Coder</div>
+                    <div class="text-center p-3 bg-light rounded shadow-sm">Jeux vidéo</div>
+                    <div class="text-center p-3 bg-light rounded shadow-sm">Jeux d'échecs</div>
+                    <div class="text-center p-3 bg-light rounded shadow-sm">Jeux de société</div>
+                    <div class="text-center p-3 bg-light rounded shadow-sm">JDR (Jeux De Rôle)</div>
+                </div>
+
+                <!-- Pratiques sportives -->
+
+                <h2 class="card-title border-bottom pb-2 mt-4">Pratiques sportives</h2>
+                <div class="d-flex gap-3 mt-2 flex-wrap">
+                    <div class="text-center p-3 bg-light rounded shadow-sm"> 6 ans de judo (ceinture orange / verte)</div>
+                    <div class="text-center p-3 bg-light rounded shadow-sm"> 1 an de natation en club</div>
+                </div>
+            </div>
+
+            <!-- Mes traces / Projets -->
+            <!-- Aperçu projets (renvoie vers projets.html) -->
+            <div id="projets" class="card mt-4 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title border-bottom pb-2">Mes projets</h2>
+                    <p class="text-muted">Voici un rapide aperçu - cliquez sur un projet pour en savoir plus.</p>
+                    <div class="row g-3 mt-1">
+                        <div class="col-md-6">
+                            <a href="projets.html#tancarville1" class="text-decoration-none text-dark">
+                                <div class="card h-100 project-preview-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tancarville 1</h5>
+                                        <p class="card-text text-muted mb-0">1ère GameJam · Octobre Numérique 2025 · Godot</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="projets.html#tancarville2" class="text-decoration-none text-dark">
+                                <div class="card h-100 project-preview-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tancarville 2</h5>
+                                        <p class="card-text text-muted mb-0">2ème GameJam · "DevArt" 2025 · Godot</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="projets.html#loveletter" class="text-decoration-none text-dark">
+                                <div class="card h-100 project-preview-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">LoveLetter</h5>
+                                        <p class="card-text text-muted mb-0">Jeu de cartes solo · Projet personnel · Qt</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="projets.html#egna" class="text-decoration-none text-dark">
+                                <div class="card h-100 project-preview-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EGNA</h5>
+                                        <p class="card-text text-muted mb-0">Éditeur de Générateur de Nombres Aléatoires · Projet personnel · Qt</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="projets.html#projetAPI" class="text-decoration-none text-dark">
+                                <div class="card h-100 project-preview-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vision des taxes sur les communes PACA</h5>
+                                        <p class="card-text text-muted mb-0">Jeux de données d'API · Projet universitaire · JavaScript</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="projets.html" class="btn btn-outline-primary mt-3">Voir tous les projets en détail</a>
+                </div>
+            </div>
+
+            <!-- Me contacter -->
+            <div id="contact" class="card mt-4 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title border-bottom pb-2">Me contacter</h2>
+                    <ul class="list-group list-group-flush mt-2">
+                        <li class="list-group-item">
+                            <p>Mail : <a class="link-offset-2 link-underline link-underline-opacity-10" href="mailto:loicdos84@gmail.com">loicdos84@gmail.com</a></p>
+                            <p>Téléphone : 07 66 20 68 80</p>
+                            <p>Compte Github : <a class="link-offset-2 link-underline link-underline-opacity-10" href="https://github.com/erreur130">https://github.com/erreur130</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="text-center text-muted mt-4 mb-3 border-top pt-3">
+                &copy; 2026 DOSSETTO Loïc
+            </footer>
+
+        </div>
+    </body>
