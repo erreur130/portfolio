@@ -125,3 +125,8 @@ section[id], .card[id] {
 .skill-bar-fill.level-secondary{ background-color: var(--bs-secondary); }
 .skill-bar-fill.level-dark     { background-color: var(--bs-dark); }
 .skill-bar-fill.level-info     { background-color: var(--bs-info); }
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: default !important;
+}
